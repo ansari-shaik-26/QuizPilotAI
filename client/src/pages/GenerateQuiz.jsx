@@ -29,8 +29,7 @@ function GenerateQuiz() {
 
     try {
       // Send request to backend
-      const response = await fetch(
-        "http://localhost:5000/api/generate-quiz",
+      const response = await fetch("https://quizpilot-ai-server.onrender.com/api/generate-quiz", 
         {
           method: "POST",
 
